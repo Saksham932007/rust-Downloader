@@ -1,0 +1,21 @@
+[package]
+name = "rust-downloader"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# For easy, ergonomic argument parsing
+clap = { version = "4.5.4", features = ["derive"] }
+
+# The modern HTTP client
+reqwest = { version = "0.12.4", features = ["stream"] }
+
+# The standard for asynchronous Rust
+tokio = { version = "1.37.0", features = ["full"] }
+
+# For beautiful progress bars and spinners
+indicatif = { version = "0.17.8", features = ["tokio"] }
+
+# For simplified error handling
+anyhow = "1.0.86"
+futures-util = "0.3.31"
